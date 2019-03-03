@@ -15,7 +15,7 @@ def rename_files():
     #2 Rename all the files listed removing the number from the file names
     for file_name in file_list:
         print("Old file name -"+ file_name)
-        print("New file name -"+ file_name.translate(None,"0123456789"))
-        os.rename(file_name, file_name.translate(None,"0123456789"))
+        print("New file name -"+ file_name.strip('0123456789'))
+        os.rename(file_name, file_name.strip('0123456789'))
         os.chdir(saved_path)
 rename_files()
