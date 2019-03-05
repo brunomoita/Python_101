@@ -13,7 +13,6 @@ def draw_square(some_turtle):
         square = square + 1
 
 def draw_art():
-
     window = turtle.Screen()
     window.bgcolor("green")    
     chuck = turtle.Turtle()
